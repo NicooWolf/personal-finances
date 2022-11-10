@@ -1,0 +1,19 @@
+.header__main {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 1.25rem 0;
+  & :nth-child(1) {
+    color: white;
+    text-decoration: none;
+  }
+  & :nth-child(2) {
+    color: white;
+  }
+  & :nth-child(3) {
+    color: black;
+  }
+}
