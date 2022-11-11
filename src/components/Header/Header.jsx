@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 import "./index.scss";
 
 const Header = () => {
@@ -6,10 +7,10 @@ const Header = () => {
     <>
       <header className="header__main">
         <a href="#">
-          <img src="../../assets/logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </a>
         <h1>Titulo</h1>
-        <h3>Info</h3>
+        <h3>Info ?</h3>
       </header>
     </>
   );
