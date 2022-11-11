@@ -1,23 +1,46 @@
-.header__main {
+.header {
   background-color: grey;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 5rem;
   padding: 0 1.25rem 0;
+
   & img {
     width: 4rem;
     height: 4rem;
   }
-  & :nth-child(1) {
+  &__title {
+    font-size: 1.4rem;
+    text-shadow: 1px 2px 11px rgba(0, 0, 0, 0.5);
     color: white;
     text-decoration: none;
   }
-  & :nth-child(2) {
+  &__labels {
+    display: flex;
+    gap: 1rem;
     color: white;
   }
-  & :nth-child(3) {
-    color: black;
+}
+
+.active {
+  color: black;
+  text-decoration: none;
+}
+
+.inactive {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: black;
+}
+
+.inactive:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header__main {
+    // background-color: red;
   }
 }
